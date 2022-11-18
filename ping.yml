@@ -6,4 +6,3 @@
   - name: "Execute command!"
     command: whoami
     register: who
-  - name: "Result"
