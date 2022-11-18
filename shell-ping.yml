@@ -5,4 +5,4 @@
   tasks:
   - name: "Verifica ping"
     ansible.builtin.shell:
-      cmd: ping google.com
+      cmd: ping google.com -c 2
