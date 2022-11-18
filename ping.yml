@@ -1,5 +1,5 @@
 ---
-- hosts: lin
+- hosts: ser
   become: no
   gather_facts: no
   tasks:
