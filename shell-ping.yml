@@ -1,4 +1,5 @@
 ---
-- name: verifica internet
-   ansible.builtin.shell:
+  tasks:
+  - name: "Execute command!"
+    ansible.builtin.shell:
     cmd: ping google.com
