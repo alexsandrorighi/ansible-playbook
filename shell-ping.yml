@@ -1,5 +1,8 @@
 ---
+- hosts: ser
+  become: no
+  gather_facts: no
   tasks:
-  - name: "Execute command!"
+  - name: "Verifica ping"
     ansible.builtin.shell:
       cmd: ping google.com
