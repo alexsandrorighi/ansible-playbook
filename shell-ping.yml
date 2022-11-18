@@ -1,3 +1,4 @@
-name: verifica internet
-  ansible.builtin.shell:
+---
+- name: verifica internet
+   ansible.builtin.shell:
     cmd: ping google.com
