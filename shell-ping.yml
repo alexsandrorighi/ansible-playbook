@@ -1,4 +1,7 @@
 ---
+- hosts: ser
+  become: no
+  gather_facts: no
   tasks:
   - name: "Verifica ping"
     ansible.builtin.shell:
