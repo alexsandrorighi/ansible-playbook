@@ -4,7 +4,7 @@
     comando: "ls"
   tasks:
   - name: Coleta
-    shell:  "ls"
+    shell:  "{{ comando }}"
     register: saida
   - name: debug
     debug: 
