@@ -7,4 +7,4 @@
     register: saida
   - name: debug
     debug:
-      msg: "Resultado do comando executado {{ saida }}"
+      msg: "Resultado do comando executado {{ saida }} do ambiente {{ environment }}"
