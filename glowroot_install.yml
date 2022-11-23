@@ -4,7 +4,7 @@
     domain: "{{ }}"
   tasks:
   - name: Instala o glowroot
-    salt.modules.jboss7_cli
+    salt.modules.jboss7_cli:
       jboss_config:
         cli_path: '/opt/jboss74-sem-modulo/bin/jboss-cli.sh'
         controller: jbosshost74-1.tef.intra.rs.gov.br:9999
