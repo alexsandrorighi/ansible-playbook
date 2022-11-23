@@ -1,5 +1,7 @@
 ---
 - hosts: ser
+  vars:
+    whoami: ls
   tasks:
   - name: Passar Parametros
     command: {{ whoami }}
