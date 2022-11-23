@@ -1,10 +1,10 @@
 ---
 - hosts: ser
   vars:
-    comando: ls
+    comando: "ls"
   tasks:
   - name: Coleta
-    shell:  {{ comando }}
+    shell:  "ls"
     register: saida
   - name: debug
     debug: 
