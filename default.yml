@@ -1,5 +1,6 @@
 ---
 - hosts: ser
   tasks:
-  - command: whoami
+  - name: Passar Parametros
+    command: {{ whoami }}
 ...
