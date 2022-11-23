@@ -1,8 +1,12 @@
 ---
 - hosts: ser
   vars:
-    whoami: ls
+    comando: ls
   tasks:
-  - name: Passar Parametros
-    command: {{ whoami }}
+  - name: Coleta
+    shell:  {{ comando }}
+    register: saida
+  - name: debug
+    debug: 
+      msg: "Apresente o nome do server {{ saida }}"
 ...
