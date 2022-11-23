@@ -1,12 +1,10 @@
----
 - hosts: ser
   vars:
-    comando: {{ }}
+    comando: "{{ }}"
   tasks:
   - name: Coleta
-    shell:  "{{ comando }}"
+    shell: "{{ comando }}"
     register: saida
   - name: debug
-    debug: 
+    debug:
       msg: "Resultado do comando executado {{ saida }}"
-...
