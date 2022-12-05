@@ -1,8 +1,8 @@
-- hosts: siltef1311
+- hosts: ser_lab
 - become: no
   vars:
     #rede: "{{ }}"
-    caminho: "/home/procergs/alexsandro-righi/fw.sh"
+    caminho: "/home/alex/fw.sh"
   tasks:
   - name: "Adicionar nova rede a lista de bloqueio do iptables"
     shell: "cat {{ caminho }} "
