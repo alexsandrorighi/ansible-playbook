@@ -1,4 +1,4 @@
-- hosts: siltef_1311
+- hosts: siltef1311
 - become: no
   vars:
     #rede: "{{ }}"
