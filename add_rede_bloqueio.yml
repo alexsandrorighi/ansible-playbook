@@ -5,7 +5,8 @@
   tasks:
   - name: "Adicionar nova rede a lista de bloqueio do iptables"
     blockinfile:
-      path: "{{ caminho }}"
+      state: present
+      dest: "{{ caminho }}"
       insertafter: "autorizado_http=("
       block: |
         {{ rede }}
