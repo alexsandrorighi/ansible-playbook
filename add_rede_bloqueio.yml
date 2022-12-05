@@ -1,11 +1,12 @@
 - hosts: siltef_1311
 - become: no
-- vars:
+  vars:
     #rede: "{{ }}"
     caminho: "/home/procergs/alexsandro-righi/fw.sh"
-- tasks:
+  tasks:
   - name: "Adicionar nova rede a lista de bloqueio do iptables"
-  - shell: "cat {{ caminho }} "
+    shell: "cat {{ caminho }} "
     register: saida
+  - name: "Exibição de saída"
     debug:
       msg: "Resultado do cat {{ saida }}"
