@@ -5,12 +5,10 @@
   tasks:
   - name: "Adicionar nova rede a lista de bloqueio do iptables"
     blockinfile:
-      state: present
       path: "{{ caminho }}"
       insertafter: "autorizado_http=("
       block: |
         {{ rede }}
-      register: saida
   - name: "Exibição de saída"
     debug:
       msg: "Resultado do cat {{ saida }}"
