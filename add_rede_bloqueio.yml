@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: ser
   vars:
     rede: "{{ }}"
     caminho: "/home/alex/fw.sh"
@@ -9,5 +9,5 @@
       dest: "{{ caminho }}"
       insertafter: "autorizado_http=("
       block: |
-        {{ rede }}
+        1233
 
