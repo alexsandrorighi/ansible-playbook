@@ -7,4 +7,5 @@
     blockinfile:
       state: present
       dest: "{{ caminho }}"
-      context: "{{ rede }}"
+      block: |
+        "{{ rede }}""
