@@ -9,6 +9,4 @@
       insertafter: "autorizado_http=("
       block: |
         {{ rede }}
-  - name: "Exibição de saída"
-    debug:
-      msg: "Resultado do cat {{ saida }}"
+
