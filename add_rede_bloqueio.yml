@@ -8,4 +8,4 @@
       state: present
       dest: "{{ caminho }}"
       block: |
-        "{{ rede }}""
+        {{ rede }}
