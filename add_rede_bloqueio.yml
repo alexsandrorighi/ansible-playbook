@@ -1,13 +1,10 @@
 - hosts: ser
   vars:
     rede: "{{ }}"
-    caminho: "/home/alex/fw.sh"
+    caminho: "/home/alex/liberado_http.txt"
   tasks:
   - name: "Adicionar nova rede a lista de bloqueio do iptables"
     blockinfile:
       state: present
       dest: "{{ caminho }}"
-      insertafter: "autorizado_http=("
-      block: |
-        "1233"
-
+      context: "{{ rede }}"
