@@ -1,11 +1,10 @@
-- hosts: ser_lab
-- become: no
+- hosts: ser
   vars:
     #rede: "{{ }}"
     caminho: "/home/alex/fw.sh"
   tasks:
   - name: "Adicionar nova rede a lista de bloqueio do iptables"
-    shell: "cat {{ caminho }} "
+    shell: "cat {{ caminho }}"
     register: saida
   - name: "Exibição de saída"
     debug:
